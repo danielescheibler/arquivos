@@ -1,0 +1,2811 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniele Scheibler | UX/UI Designer | Portfolio 2025</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaquery.css">
+  <link rel="stylesheet" href="css/darkmode.css">
+  <link rel="stylesheet" href="css/projetos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <div class="container">
+      <div id="sobre"></div>
+      <section id="projects-list" class="projects-list-container">
+        <!-- Aqui é importado projetos.html via JS, mas mantido para referência -->
+      </section>
+      <div id="project-orcamento"></div>
+      <div id="project-ecommerce"></div>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <button id="back-to-top" title="Voltar ao topo" style="display:none;"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+footer.html
+<div class="footer-social">
+  <a href="https://github.com/danielescheibler" target="_blank" class="icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  <a href="https://instagram.com/danieles.designer" target="_blank" class="icon-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/danielescheibler/" target="_blank" class="icon-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  <a href="https://danielescheibler.myportfolio.com/" target="_blank" class="icon-link" aria-label="Adobe Portfolio">
+    <img src="assets/adobepf.png" alt="Adobe Portfolio" class="adobe-pf-icon">
+  </a>
+  <a href="mailto:danielescheibler@gmail.com" class="icon-link" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+  <a href="https://wa.me/5551997523656" target="_blank" class="icon-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+<section id="contato" class="container contato-section">
+  <p class="footer-copy">Desenvolvido por <b>Daniele Scheibler</b> • 2025</p>
+  </section>
+
+header.html
+<header class="site-hero">
+  <div class="site-hero-bg"></div>
+  <div class="site-hero-top">
+    <img src="assets/logo.png" alt="Logo Daniele Scheibler" class="site-logo">
+    <button class="menu-toggle" aria-label="Abrir menu" id="menu-toggle">
+      <img src="assets/burger-bar.png" alt="Menu">
+    </button>
+    <nav class="header-nav" id="header-nav">
+      <a href="#projects-list" class="nav-link">Página Inicial</a>
+      <a href="#sobre-mim" class="nav-link">Sobre Mim</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="header-lang">
+      <button class="lang-btn active" data-lang="pt">PT</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </div>
+  <div class="site-hero-bottom">
+    <div class="header-social">
+      <a href="https://github.com/danielescheibler" target="_blank" class="icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/danieles.designer" target="_blank" class="icon-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/danielescheibler/" target="_blank" class="icon-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+  <button id="theme-toggle" class="theme-float" aria-label="Alternar tema" title="Tema claro/escuro">
+    <img id="theme-icon" src="assets/noite.png" alt="Modo escuro" width="28" height="28">
+  </button>
+</header>
+
+projeto-ecommerce.html
+<section id="project-ecommerce" class="project-details-container" style="display:none;">
+  <!-- ... conteúdo detalhado do e-commerce ... -->
+  <div style="text-align:center; margin: 2.5rem 0 1rem 0;">
+    <button id="back-to-projects-ecommerce" class="btn-contato">Voltar para o início</button>
+  </div>
+</section>
+
+projeto-orcamento.html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Orçamento de Serviços Express</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/projetos.css">
+  <link rel="stylesheet" href="css/mediaquery.css">
+  <link rel="stylesheet" href="css/darkmode.css">
+  <link rel="stylesheet" href="css/darkmodeprojetos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <section id="project-orcamento" class="project-details-container">
+    <div class="hero-content">
+         <h1>Orçamento de Serviços Express</h1>
+      </div>
+<div class="hero-image-block" id="mockup">
+  <img id="grafico-mockup" src="assets/mockup.png" alt="Mockup do Site">
+</div>
+    </div>
+  </section>
+  <section class="container">
+    <h2>Visão Geral do Projeto</h2>
+    <div class="project-overview-icons grid-2x3">
+      <div class="project-feature">
+        <span class="project-feature-icon">
+          <i class="fas fa-layer-group"></i>
+        </span>
+        <strong>O Produto</strong>
+        <p>Plataforma online para realizar orçamentos de edição de vídeo e motion design. Usuários podem descrever suas necessidades, enviar referências e receber um valor estimado automaticamente por e-mail.</p>
+      </div>
+      <div class="project-feature">
+        <span class="project-feature-icon">
+          <i class="fas fa-clock"></i>
+        </span>
+        <strong>Duração</strong>
+        <p>1-2 meses</p>
+      </div>
+      <div class="project-feature">
+        <span class="project-feature-icon">
+          <i class="fas fa-exclamation-circle"></i>
+        </span>
+        <strong>O Problema</strong>
+        <p>Profissionais e clientes da área criativa perdiam tempo em orçamentos manuais, com pouca clareza sobre prazos, escopo e valor.</p>
+      </div>
+      <div class="project-feature">
+        <span class="project-feature-icon">
+          <i class="fas fa-bullseye"></i>
+        </span>
+        <strong>Objetivo</strong>
+        <p>Criar uma solução digital que simplifica o processo de orçamento, deixando-o rápido, transparente e fácil para ambos os lados.</p>
+      </div>
+      <div class="project-feature">
+        <span class="project-feature-icon">
+          <i class="fas fa-user-tie"></i>
+        </span>
+        <strong>Meu papel</strong>
+        <p>UX/UI Designer responsável pelo projeto do início ao fim.</p>
+      </div>
+      <div class="project-feature">
+        <span class="project-feature-icon">
+          <i class="fas fa-tasks"></i>
+        </span>
+        <strong>Responsabilidades</strong>
+        <p>Pesquisa, definição de requisitos, wireframes, protótipo, UI design, testes de usabilidade, acessibilidade.</p>
+      </div>
+    </div>
+  </section>
+<section id="processo" class="container">
+  <h2>Desenvolvimento do Projeto</h2>
+  <picture>
+    <source srcset="assets/processodoprojeto_mobile.png" media="(max-width: 700px)">
+    <img id="grafico-processo" src="assets/processodoprojeto.png" alt="Gráfico do processo do projeto">
+  </picture>
+</section>
+
+<section id="processo" class="container">
+  <h2>Pesquisa com Usuários</h2>
+
+  <div class="project-desc" style="max-width:900px;">
+    <p id="textos"><strong>Seleção dos participantes:</strong><br>
+    Os participantes foram selecionados para representar o perfil de potenciais usuários do sistema, considerando diversidade de experiência em orçamentos para projetos de vídeo e motion design. O grupo trouxe perspectivas variadas sobre as principais dores do processo tradicional.</p>
+  </div>
+  
+  <div class="project-overview-icons grid-1x3" style="margin-bottom: 24px;">
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-users"></i>
+      </span>
+      <strong>Participantes:</strong>
+      <p>4 participantes remotos, perfil alinhado ao público-alvo</p>
+    </div>
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-stopwatch"></i>
+      </span>
+      <strong>Duração:</strong>
+      <p>Cada sessão teve cerca de 20 minutos</p>
+    </div>
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-desktop"></i>
+      </span>
+      <strong>Formato:</strong>
+      <p>Estudo de usabilidade não moderado, sessões individuais e remotas</p>
+    </div>
+  </div>
+  
+  <div class="project-desc" style="max-width:900px;">
+    <strong>Roteiro de pesquisa:</strong>
+  </div>
+
+  <p><strong>Perguntas quantitativas:</strong></p>
+  <ol class="perguntas-lista">
+    <li><span class="numero">1.</span> Com que frequência você precisa solicitar orçamentos para projetos de vídeo ou motion design?</li>
+    <li><span class="numero">2.</span> Em média, quantos minutos você gasta atualmente para obter um orçamento de edição de vídeo?</li>
+    <li><span class="numero">3.</span> Em uma escala de 1 a 5, quanta clareza você sente em relação ao escopo e ao prazo ao receber um orçamento tradicional/manual?</li>
+  </ol>
+
+  <p><strong>Perguntas qualitativas:</strong></p>
+  <ol class="perguntas-lista" start="4">
+    <li><span class="numero">4.</span> Quais são as maiores dificuldades que você enfrenta ao solicitar ou fornecer orçamentos para projetos criativos?</li>
+    <li><span class="numero">5.</span> Descreva uma experiência em que houve falta de clareza no escopo, prazo ou valor ao pedir um orçamento. O que aconteceu?</li>
+    <li><span class="numero">6.</span> Quais informações você considera indispensáveis ao descrever um projeto de vídeo para orçamento?</li>
+    <li><span class="numero">7.</span> O que faz um orçamento ser considerado transparente e confiável por você?</li>
+    <li><span class="numero">8.</span> Se pudesse mudar algo nos processos tradicionais de orçamento, o que seria?</li>
+    <li><span class="numero">9.</span> Como seria, para você, o processo ideal de solicitação e recebimento de orçamentos para vídeos/motion?</li>
+  </ol>
+
+  <p><strong>Pergunta sobre impacto e adoção:</strong></p>
+  <ol class="perguntas-lista" start="10">
+    <li><span class="numero">10.</span> De que forma uma solução digital automatizada poderia facilitar seu dia a dia nesse tipo de trabalho? Você enxerga algum benefício ou limitação?</li>
+  </ol>
+</section>
+
+    <section class="container">
+  <h2>Pontos de dor</h2>
+  <div class="project-overview-icons grid-1x3">
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-file-alt"></i>
+      </span>
+      <strong>Falta de clareza no pedido</strong>
+      <p>Perguntas pouco detalhadas geram confusão e retrabalho.</p>
+    </div>
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-exchange-alt"></i>
+      </span>
+      <strong>Dificuldade na comunicação</strong>
+      <p>Dúvidas sobre estilos, prazos e identidade visual.</p>
+    </div>
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-coins"></i>
+      </span>
+      <strong>Previsibilidade de valores</strong>
+      <p>Usuários sentem insegurança quanto ao preço final.</p>
+    </div>
+  </div>
+</section>
+
+ <section id="personas" class="container">
+  <h2>Criação de Persona</h2>
+  <section class="persona-mobile">
+    <div class="persona-row ficha">
+      <img class="persona-photo" src="assets/persona_mobile.png" alt="Alice">
+      <div class="persona-basic">
+        <h3 class="persona-name">Alice</h3>
+        <ul>
+          <li><strong>Idade:</strong> 28 anos</li>
+          <li><strong>Formação:</strong> Designer Gráfico</li>
+          <li><strong>Cidade:</strong> Porto Alegre/RS</li>
+          <li><strong>Família:</strong> Mora sozinha</li>
+          <li><strong>Profissão:</strong> Editora autônoma</li>
+        </ul>
+        <div class="persona-summary">
+          Alice é editora freelancer de 28 anos, atende pequenas empresas e influencers no Brasil e mora sozinha. Valoriza orçamentos rápidos e claros para focar na parte criativa e equilibrar vida pessoal e profissional. Frustra-se com briefings incompletos, negociação pouco transparente e excesso de mensagens.
+        </div>
+      </section>
+        <div class="persona-objetivos-frustracoes">
+          <div>
+            <strong>Objetivos</strong>
+            <p>• Orçar projetos de vídeo e motion de forma ágil, sem burocracia.</p>
+            <p>• Receber briefings claros para evitar retrabalho.</p>
+            <p>• Ter previsibilidade de prazos e valores para planejar sua agenda e renda.</p>
+          </div>
+          <div>
+            <strong>Frustrações</strong>
+            <p>• Perco tempo trocando mensagens só para entender o que o cliente quer.</p>
+            <p>• Os briefings vêm incompletos, e isso gera retrabalho.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+   <section class="container">
+  <h2>Jornada do Usuário</h2>
+  <p id="textos">Criei um mapa da jornada do usuário com a experiência da Alice ao usar o site para ajudar a identificar possíveis pontos de dor e oportunidades de melhoria.</p>
+
+  <section class="persona-container">
+    <div class="persona-head">
+      <strong>Persona: <span class="persona-name">Alice</span></strong>
+      <p class="persona-goal">
+        Goal: Facilitar e agilizar o recebimento e resposta de pedidos de orçamento de edição de vídeo e de motion.
+      </p>
+    </div>
+    <div class="persona-layout">
+      <div class="persona-row persona-header">
+        <div class="persona-col persona-label"></div>
+        <div class="persona-col">Escolher plataforma</div>
+        <div class="persona-col">Preencher briefing</div>
+        <div class="persona-col">Revisar orçamento gerado</div>
+        <div class="persona-col">Enviar solicitação</div>
+        <div class="persona-col">Acompanhar retorno</div>
+      </div>
+      <div class="persona-row">
+        <div class="persona-col persona-label">Lista de tarefas</div>
+        <div class="persona-col">
+          <b>A.</b> Buscar plataformas confiáveis<br>
+          <b>B.</b> Escolher a que parece mais ágil
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Preencher perguntas sobre o projeto<br>
+          <b>B.</b> Anexar referências e detalhes
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Conferir valor estimado<br>
+          <b>B.</b> Avaliar prazo sugerido
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Enviar o pedido<br>
+          <b>B.</b> Receber confirmação visual
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Esperar retorno do editor<br>
+          <b>B.</b> Negociar detalhes finais
+        </div>
+      </div>
+      <div class="persona-row">
+        <div class="persona-col persona-label">Sentimento</div>
+        <div class="persona-col">
+          <b>A.</b> Esperançosa por praticidade<br>
+          <b>B.</b> Ansiosa por rapidez
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Focada no preenchimento<br>
+          <b>B.</b> Às vezes confusa com perguntas técnicas
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Aliviada ao ver o orçamento<br>
+          <b>B.</b> Às vezes insegura sobre detalhes
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Confiante se houver confirmação visual clara<br>
+          <b>B.</b> Insegura sem feedback
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Ansiosa por resposta<br>
+          <b>B.</b> Deseja agilidade e clareza
+        </div>
+      </div>
+      <div class="persona-row">
+        <div class="persona-col persona-label">Oportunidades de melhoria</div>
+        <div class="persona-col">
+          <b>A.</b> Homepage objetiva e confiável<br>
+          <b>B.</b> Explicar benefícios de orçar online
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Perguntas guiadas<br>
+          <b>B.</b> Exemplos visuais e dicas para facilitar o briefing
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Mostrar resumo do pedido<br>
+          <b>B.</b> Permitir editar antes de enviar
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Confirmação visual clara<br>
+          <b>B.</b> Feedback rápido em caso de erro
+        </div>
+        <div class="persona-col">
+          <b>A.</b> Notificações em tempo real<br>
+          <b>B.</b> Canal fácil de comunicação
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+  
+      <section id="processo" class="container">
+    <h2>Mapa do Site</h2>
+        <img id="mapa" src="assets/mapa.png" alt="Mapa do Site">
+    </section>
+
+      <section id="processo" class="container">
+    <h2>Wireframes no papel</h2>
+    </section>
+
+  <section id="processo" class="container">
+    <h2>Wireframes no Figma</h2>
+    </section>
+
+      <section id="processo" class="container">
+    <h2>Protótipo de baixa-fidelidade</h2>
+    </section>
+
+<section id="processo" class="container">
+  <h2>Estudo de usabilidade e parâmetros: achados</h2>
+  <p>Estas foram as principais descobertas reveladas pelo estudo de usabilidade:</p>
+  <div class="project-overview-icons grid-1x3">
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-eye"></i>
+      </span>
+      <strong>Visualizar exemplos</strong>
+      <p>Usuários queriam visualizar o andamento do preenchimento do formulário</p>
+    </div>
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-question-circle"></i>
+      </span>
+      <strong>Perguntas confusas</strong>
+      <p>Algumas perguntas eram confusas (Ex: diferença entre edição simples/complexa)</p>
+    </div>
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-check-circle"></i>
+      </span>
+      <strong>Confirmação dos dados</strong>
+      <p>Pedido de confirmação visual antes de enviar o orçamento</p>
+    </div>
+  </div>
+</section>
+
+       <section id="processo" class="container">
+    <h2>Protótipo de alta-fidelidade</h2>
+    <p>Meu protótipo de alta fidelidade seguiu o mesmo fluxo do protótipo de baixa fidelidade e incorporou as mudanças de design feitas após o estudo de usabilidade, além de várias melhorias que identifiquei ao longo do processo.
+Visualizar o protótipo de alta fidelidade do <a href="https://danielescheibler.github.io/orcamento-video/" target="_blank">Orçamento de Edição Express.</a></p>
+    </section>
+
+  <section id="processo" class="container">
+  <h2>Considerações de usabilidade</h2>
+  <div class="project-overview-icons grid-1x3">
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-compress-arrows-alt"></i>
+      </span>
+      <strong>Menos etapas</strong>
+      <p>Reduzi o número de etapas no processo de solicitação de orçamento, facilitando o caminho do usuário até a finalização.</p>
+    </div>
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-info-circle"></i>
+      </span>
+      <strong>Avisos visuais</strong>
+      <p>Implementei avisos visuais para informar erros de preenchimento, confirmações e orientações, deixando o processo mais compreensível.</p>
+    </div>
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-tasks"></i>
+      </span>
+      <strong>Barra de progresso e exemplos</strong>
+      <p>Adicionei uma barra de progresso, instruções e exemplos nos campos, organizando as informações de forma lógica e acessível.</p>
+    </div>
+  </div>
+</section>
+
+       <section id="processo" class="container">
+    <h2>Conclusões</h2>
+     <div class="project-overview-icons grid-1x2">
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-bolt"></i>
+      </span>
+      <strong>Impacto:</strong>
+      <p>Processo de orçamento mais ágil, menos retrabalho, usuários satisfeitos</p>
+    </div>
+    <div class="project-feature">
+      <span class="project-feature-icon">
+        <i class="fas fa-lightbulb"></i>
+      </span>
+      <strong>O que aprendi:</strong>
+      <p>Importância da clareza nas perguntas e feedback visual constante</p>
+    </div>
+  </div>
+</section>
+
+<section id="processo" class="container">
+  <h2>Próximos passos</h2>
+  <picture>
+    <source srcset="assets/passosmobile.png" media="(max-width: 700px)">
+    <img id="proximos-passos" src="assets/passos.png" alt="Próximos passos">
+  </picture>
+</section>
+
+  <!-- Troca do gráfico conforme tema -->
+  <script>
+    // Troca o gráfico do processo conforme tema
+    function atualizarGraficoProcesso() {
+      var tema = document.documentElement.getAttribute('data-theme');
+      var img = document.getElementById('grafico-processo');
+      if (!img) return;
+      img.src = (tema === "dark")
+        ? "assets/processodoprojeto_dark.png"
+        : "assets/processodoprojeto.png";
+    }
+    atualizarGraficoProcesso();
+    // Observa mudanças no atributo data-theme
+    const observer = new MutationObserver(atualizarGraficoProcesso);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  </script>
+</body>
+</html>
+
+projetos.html
+<section id="projects-list" class="projects-list-container">
+  <div class="projects-list-grid">
+    <div class="project-group">
+      <div class="project-card" data-project="orcamento">
+        <div class="project-image" style="background-image:url('assets/capa_mockup.png');"></div>
+      </div>
+      <div class="project-title">Orçamento de Serviços Express</div>
+      <div class="project-desc">
+        UX/UI para otimizar orçamentos de vídeo e facilitar a vida do profissional audiovisual.
+      </div>
+    </div>
+    <div class="project-group">
+      <div class="project-card" data-project="ecommerce">
+        <div class="project-image" style="background-image:url('assets/capa_ecommerce.png');"></div>
+      </div>
+      <div class="project-title">E-commerce (Projeto Fictício)</div>
+      <div class="project-desc">
+        Experiência de compra digital, design de interface e jornada do usuário para loja online.
+      </div>
+    </div>
+  </div>
+</section>
+
+sobre.html
+<section id="sobre-mim" class="container sobre-mim-content-extra">
+  <div class="sobre-mim-content">
+    <img src="assets/foto.png" alt="Daniele Scheibler" class="sobre-mim-foto">
+    <div class="sobre-mim-texto">
+      <h2>Sobre Mim</h2>
+      <strong class="perfil-titulo">UX/UI Designer e Criadora Visual</strong>
+      <p>
+        Me chamo <b>Daniele Scheibler</b>, sou UX/UI Designer com formação em Ciências Biológicas e background em design gráfico, edição de vídeos e motion design.<br>
+        Natural do Rio Grande do Sul, iniciei minha trajetória acadêmica pela ciência, mas encontrei nas artes visuais minha verdadeira paixão.<br>
+        Hoje atuo como profissional autônoma criando identidades visuais, conteúdos digitais e experiências centradas no usuário.<br>        
+      </p>
+      <h3 class="perfil-subtitulo">Ferramentas e Tecnologias</h3><br>
+      <div class="perfil-tecnologias">
+        <img alt="Figma" title="Figma" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"/>
+        <img alt="Photoshop" title="Photoshop" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"/>
+        <img alt="Illustrator" title="Illustrator" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"/>
+        <img alt="Premiere" title="Premiere Pro" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg"/>
+        <img alt="After Effects" title="After Effects" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"/>
+        <img alt="HTML" title="HTML5" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+        <img alt="CSS" title="CSS3" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+        <img alt="JavaScript" title="JavaScript (básico)" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+        <img alt="MySQL" title="SQL" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/>
+        <img alt="Copilot" title="Copilot" width="30" src="assets/copilot-icon.svg"/>
+        <img alt="Chatgpt" title="Chatgpt" width="30" src="assets/chatgpt-icon.svg"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+style.css
+:root {
+  --header-bg: #EFEFEF;
+  --accent: #323232;
+  --accent2: #468099;
+  --white: #fff;
+  --gray: #5a5a5a;
+  --gray-bg: #EFEFEF;
+  --social: #323232;
+  --social-hover: #468099;
+  --transition: .23s cubic-bezier(.5,.05,.22,1);
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--gray-bg);
+  color: var(--gray);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ====== CONTAINER PADRÃO ====== */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;   /* ~64px (4 dedos) */
+  padding-right: 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  background: transparent;
+  box-sizing: border-box;
+  text-align: left !important;
+}
+.container h1, 
+.container h2, 
+.container h3, 
+.container h4, 
+.container h5, 
+.container h6 {
+  text-align: left !important;
+}
+
+/* ========== HEADER, NAV, HERO ========== */
+.site-hero {
+  position: relative;
+  min-height: 615px;
+  width: 100vw;
+  background: var(--header-bg);
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 90px;
+}
+.site-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 105%;
+  background: url('fundo.jpg') center center/cover no-repeat;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: none;
+  transition: background-image 0.3s;
+}
+
+.site-hero-top {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 75px;
+  background: transparent;
+}
+.site-logo {
+  height: 38px;
+  width: auto;
+  margin: 20px 0 0 40px;
+  display: block;
+  flex-shrink: 0;
+}
+.header-nav {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  min-width: 0;
+  margin-top: 25px;
+  margin-left: -10px;
+}
+.nav-link {
+  color: var(--social);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  transition: color .17s;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  letter-spacing: 0.015em;
+  box-shadow: none;
+  margin: 0 10px;
+  padding: 0;
+  margin-top: -0.5em;
+}
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+  color: #40849e;
+}
+.nav-link::after {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  z-index: 20;
+  cursor: pointer;
+  padding: 0;
+}
+.menu-toggle img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.site-hero-bottom {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  max-width: 100vw;
+  z-index: 3;
+  padding: 0 3vw 18px 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2.5em;
+  pointer-events: none;
+}
+.header-social {
+  display: flex;
+  gap: 1.1rem;
+  pointer-events: auto;
+}
+.icon-link {
+  color: var(--social);
+  font-size: 1.35rem;
+  background: #EFEFEF;
+  border-radius: 50%;
+  width: 38px; height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .17s, background .15s, box-shadow .15s;
+  cursor: pointer;
+}
+.icon-link:hover, .icon-link:focus {
+  background: #40849e;
+  color: #EFEFEF;
+}
+.header-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  pointer-events: auto;
+  white-space: nowrap;
+  overflow: visible;
+  margin-right:4em;
+  margin-top: 0.5em;
+}
+.lang-sep {
+  margin: 0 0.5rem;
+  opacity: 0.6;
+  font-weight: bold;
+  user-select: none;
+}
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.08rem;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: color .2s, opacity .2s;
+  padding: 0.3rem;
+}
+.lang-btn.active,
+.lang-btn:hover {
+  opacity: 1;
+  color: var(--accent2);
+}
+
+.theme-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--accent2);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  font-size: 1.3rem;
+  box-shadow: 0 2px 14px rgba(70,128,153,0.13);
+  cursor: pointer;
+  z-index: 1001;
+  opacity: 0.89;
+  transition: background .18s, color .18s, opacity .18s, transform .18s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-float:hover {
+  background: var(--accent);
+  color: var(--white);
+  opacity: 1;
+  transform: scale(1.12);
+}
+.theme-float img {
+  width: 28px;
+  height: 28px;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  transition: width 0.18s, height 0.18s;
+}
+.theme-float img[src$="dia.png"] {
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
+  max-height: 32px;
+  object-fit: contain;
+}
+
+/* ========== HERO CONTENT ========== */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.hero-title-block {
+  flex: 1 1 540px;
+  min-width: 200px;
+}
+.hero-title-block h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 0;
+  line-height: 0.98;
+}
+.hero-image-block {
+  flex: 1 1 320px;
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-avatar {
+  width: 340px;
+  max-width: 44vw;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 24px rgba(50,50,50,0.08);
+}
+
+.subtitle {
+  font-size: 1.12rem;
+  opacity: 0.77;
+  margin-bottom: 0.7rem;
+}
+.project-overview {
+  margin-top: 1.8rem;
+}
+
+/* ========== CARDS, GRIDS ========== */
+.cards-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.1rem;
+  background: transparent;
+}
+.card {
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 1.2rem 1.1rem;
+  flex: 1 1 210px;
+  min-width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow .18s, transform .18s;
+}
+.card i {
+  font-size: 2rem;
+  color: var(--accent2);
+  margin-bottom: 0.7rem;
+  transition: color .18s;
+}
+.card strong {
+  color: var(--accent2);
+  font-size: 1.08rem;
+  margin-bottom: 0.11rem;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.04);
+}
+.card:hover i {
+  color: var(--accent);
+}
+.etapas-list {
+  font-size: 1.07rem;
+  padding-left: 1.2rem;
+  background: transparent;
+}
+.img-row {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.img-fluid {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(70,128,153,0.06);
+  display: block;
+  margin: 1rem 0 1.3rem 0;
+  transition: transform 0.3s, box-shadow 0.2s;
+}
+.img-zoom:hover {
+  transform: scale(1.045);
+  box-shadow: 0 4px 28px rgba(19,180,167,0.17);
+}
+ul, ol {
+  margin: 1.2rem 0 1.1rem 0;
+}
+li {
+  margin-bottom: 0.38rem;
+}
+.btn-contato {
+  display: inline-block;
+  background: var(--accent2);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.04rem;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1.2rem;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.17s;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(19,180,167,0.11);
+  text-decoration: none;
+}
+.btn-contato:hover, .btn-contato:focus {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 18px rgba(19,180,167,0.13);
+}
+.contato-section {
+  text-align: center;
+}
+
+/* ========== BOTÃO VOLTAR AO TOPO ========== */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background: var(--accent2);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem 1.15rem 1rem 1.15rem;
+  font-size: 1.07rem;
+  box-shadow: 0 2px 14px rgba(70,128,153,0.13);
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0.88;
+  transition: opacity .18s, background .18s, transform .18s;
+  display: none;
+}
+#back-to-top:hover {
+  background: var(--accent);
+  color: #fff;
+  opacity: 1;
+  transform: scale(1.13);
+}
+
+/* ========== SOBRE, PERFIL, ETC ========== */
+.sobre-mim-container {
+  background: transparent;
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
+  padding: 3rem 4rem 2.2rem 4rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.sobre-mim-content {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.sobre-mim-foto {
+  width: 150px;
+  height: 150px;
+  min-width: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 14px rgba(70,128,153,0.09);
+  margin-bottom: 1rem;
+  background: #fff;
+}
+.sobre-mim-texto {
+  flex: 1;
+  min-width: 220px;
+}
+.sobre-mim-texto h2 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  color: #323232;
+}
+.sobre-mim-texto p {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.68;
+}
+
+.perfil-titulo {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: var(--accent2);
+  font-weight: 700;
+}
+.perfil-subtitulo {
+  margin-bottom: 0.2rem;
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  color: var(--accent2);
+  font-weight: 700;
+}
+.perfil-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+.perfil-tecnologias img {
+  border-radius: 6px;
+  padding: 3px;
+}
+
+/* ========== MENU OVERLAY ========== */
+.menu-overlay {
+  display: none;
+}
+.menu-overlay.active {
+  display: block;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(50,50,50,0.10);
+  z-index: 10;
+}
+
+/* ========== FOOTER ========== */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.contato-section {
+  text-align: center;
+  padding-top: 0.5rem !important;
+}
+.adobe-pf-icon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) saturate(100%) invert(12%) sepia(6%) saturate(1700%) hue-rotate(169deg) brightness(95%) contrast(95%);
+  transition: filter .18s;
+}
+.footer-social .icon-link,
+.footer-social .icon-link i,
+.footer-social .icon-link img {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  vertical-align: middle;
+  background-clip: padding-box;
+}
+
+/* ========== TÍTULO COM LINHA COLORIDA ========== */
+.container h2, section.container > h2 {
+  text-align: left !important;
+  position: relative;
+  display: inline-block;
+  padding-left: 22px;
+}
+.container h2::before, section.container > h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60%;
+  background: #40849e;
+  border-radius: 3px;
+}
+
+/* ========== TEXTOS JUSTIFICADOS ========== */
+#textos {
+  text-align: justify;
+}
+
+/* ========== EXCLUSIVO "Pesquisa com Usuários" ========== */
+#pesquisa-usuarios h2 {
+  text-align: justify;
+  display: block;
+  position: relative;
+  padding-left: 22px;
+}
+#pesquisa-usuarios h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60%;
+  background: #40849e;
+  border-radius: 3px;
+}
+#pesquisa-usuarios p,
+#pesquisa-usuarios .project-desc,
+#pesquisa-usuarios li {
+  text-align: justify;
+}
+#pesquisa-usuarios img {
+  display: block;
+  margin-bottom: 1em;
+  max-width: 100%;
+  height: auto;
+}
+.footer-copy {
+  text-align: center !important;
+  color: #888;
+  font-size: 0.98rem;
+  padding: 0.7rem 0 1.2rem 0;
+}
+@media (max-width: 700px) {
+  #back-to-top {
+     left: 1rem;
+    right: auto;
+    bottom: 1rem;
+    z-index: 1001;
+  }
+  .theme-float {
+    right: 1rem; 
+    left: auto;
+    bottom: 1rem;
+    z-index: 1002;
+  }
+}
+
+projetos.css
+/* =========================
+   CARDS DE PROJETOS/CAPAS
+   ========================= */
+strong, b, a {
+  color: #40849e;
+}
+
+.projects-list-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.projects-list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* ==== AJUSTE PARA ALINHAR CAPA E TEXTO ==== */
+.project-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  max-width: 98vw;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 18px;
+  width: 320px;
+  max-width: 98vw;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0;
+  border: 1.5px solid #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  margin: 0;
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.project-title, .project-desc {
+  width: 100%;
+  max-width: 320px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.project-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #40849e;
+  margin: 18px 0 6px 0;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.project-desc {
+  font-size: 1.07rem;
+  color: #5a5a5a;
+  opacity: 0.87;
+  text-align: center;
+  margin: 0 0 16px 0;
+  max-width: 100%;
+}
+
+/* =========================
+   HERO (mockup.png)
+   ========================= */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+#mockup img,
+#grafico-mockup {
+  display: block;
+  margin: 0 auto 0.08rem auto;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}
+
+/* =========================
+   OVERVIEW & PARAM GRIDS
+   (NÃO interfere nos cards de projeto)
+   ========================= */
+.project-overview-icons {
+  display: flex;
+  color: #40849e;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2.2rem 0 1.8rem 0;
+  flex-wrap: wrap;
+  background: transparent;
+}
+.project-overview-icons.grid-2x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem 2.5rem;
+  justify-items: center;
+  align-items: stretch;
+  margin: 2.2rem 0 1.8rem 0;
+  background: transparent;
+  flex-wrap: unset;
+}
+.project-overview-icons.grid-1x4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: stretch;
+  margin: 2.2rem 0 1.8rem 0;
+  background: transparent;
+}
+.project-overview-icons.grid-1x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: stretch;
+  margin: 2.2rem 0 1.8rem 0;
+  background: transparent;
+}
+.project-overview-icons.grid-1x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.2rem;  
+  justify-items: center;
+  align-items: stretch;
+  margin: 2.2rem 0 1.8rem 0;
+  background: transparent;
+}
+.project-overview-icons.persona-blocos 
+.persona-blocos .project-feature {
+  max-width: none !important;
+  min-width: 0 !important;
+  width: 100%;
+  margin: 0;
+}
+.project-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 100px;
+  color: #444;
+  max-width: 250px;
+  min-width: 180px;
+  text-align: justify;
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0;
+  font-size: 0.92rem;
+}
+.project-feature strong {
+  font-size: 0.98rem;
+  color: #40849e;
+}
+.project-feature-icon {
+  margin-bottom: 0.7rem;
+  display: flex;
+  color: #40849e !important;
+  justify-content: center;
+  align-items: center;
+}
+.project-feature-icon i,
+.project-feature-icon svg {
+  color: #40849e !important;
+  fill: #40849e !important;
+  font-size: 1.25rem !important;
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px !important;
+  min-height: 26px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  opacity: 0.8;
+  display: inline-block;
+  vertical-align: middle;
+}
+.project-feature-icon img {
+  filter: none !important;
+  opacity: 0.8;
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px !important;
+  min-height: 26px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  box-shadow: none !important;
+  transition: none !important;
+}
+[data-theme="dark"] .project-feature-icon i,
+[data-theme="dark"] .project-feature-icon svg {
+  color: #40849e !important;
+  fill: #40849e !important;
+}
+[data-theme="dark"] .project-feature-icon img {
+  filter: none !important;
+}
+
+/* Responsividade dos grids de overview (NÃO afeta .projects-list-grid) */
+@media (max-width: 900px) {
+  .project-overview-icons.grid-2x3 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .project-overview-icons.grid-1x3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 1.2rem;
+  }
+  .project-overview-icons.grid-1x4 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 700px) {
+  .project-overview-icons.grid-1x2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 1.2rem;
+  }
+  .project-overview-icons.grid-1x4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
+  }
+}
+
+/* =========================
+   ACHADOS, CONSIDERAÇÕES, PERSONA, ETC
+   ========================= */
+.usabilidade-achados-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.achado-item {
+  flex: 1 1 0;
+  max-width: 300px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 12px;
+}
+.achado-circulo {
+  width: 56px;
+  height: 56px;
+  background: #40849e;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.achado-item h3 {
+  font-size: 1.18rem;
+  color: #646b6d;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+.achado-item p {
+  font-size: 1rem;
+  color: #646b6d;
+  margin: 0;
+  font-weight: 400;
+}
+@media (max-width: 900px) {
+  .usabilidade-achados-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .achado-item {
+    max-width: 90vw;
+  }
+}
+.usabilidade-consideracoes-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.usabilidade-item {
+  flex: 1 1 0;
+  max-width: 250px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 12px;
+}
+.usabilidade-circulo {
+  width: 56px;
+  height: 56px;
+  background: #40849e;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.usabilidade-item p {
+  font-size: 1rem;
+  color: #646b6d;
+  margin: 0;
+  font-weight: 400;
+}
+@media (max-width: 900px) {
+  .usabilidade-consideracoes-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .usabilidade-item {
+    max-width: 90vw;
+  }
+}
+
+/* =========================
+   JORNADA DO USUÁRIO (PERSONA TABLE)
+   ========================= */
+.persona-container {
+  border-radius: 14px;
+  background: #f9f9f9;
+  box-shadow: 0 0 6px #0001;
+  padding: 1rem 0.4rem 1.4rem 0.4rem;
+  max-width: 950px;
+  margin: 28px auto;
+}
+.persona-head {
+  margin-bottom: 1rem;
+}
+.persona-name {
+  color: #40849e;
+  font-size: 1.1rem;
+}
+.persona-goal {
+  font-size: 0.96rem;
+  color: #444;
+  margin: 0.3rem 0 0 0;
+  opacity: 0.9;
+}
+.persona-layout {
+  width: 100%;
+  overflow-x: auto;
+}
+.persona-row {
+  display: grid;
+  grid-template-columns: 200px repeat(5, 1fr);
+  min-width: 640px;
+}
+.persona-header {
+  font-weight: 700;
+  color: #24455a;
+  border-radius: 10px 10px 0 0;
+  font-size: 0.95rem;
+}
+.persona-row:not(.persona-header) {
+ border-bottom: 1px solid #e0e0e0;
+}
+.persona-row:last-child {
+  border-radius: 0 0 10px 10px;
+  border-bottom: none;
+}
+.persona-col {
+  padding: 0.36rem 0.4rem;
+  font-size: 0.89rem;
+  border-right: 1px solid #e0e0e0;
+  min-width: 80px;
+  vertical-align: top;
+  word-break: break-word;
+}
+.persona-col:last-child {
+  border-right: none;
+}
+.persona-label {
+  background: #f0f0f0;
+  font-weight: bold;
+  color: #40849e;
+  border-right: 2px solid #c0e0f0;
+  min-width: 75px;
+  font-size: 0.92rem;
+}
+@media (max-width: 900px) {
+  .persona-container {
+    padding: 0.8rem 0.2rem 1rem 0.2rem;
+    max-width: 99vw;
+  }
+  .persona-row {
+    grid-template-columns: 60px repeat(5, minmax(80px, 1fr));
+    font-size: 0.84rem;
+    min-width: 480px;
+  }
+  .persona-col, .persona-label {
+    padding: 0.22rem 0.2rem;
+    font-size: 0.82rem;
+    min-width: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .persona-container {
+    padding: 0.4rem 0.1rem 0.6rem 0.1rem;
+  }
+  .persona-row {
+    font-size: 0.77rem;
+    grid-template-columns: 38px repeat(5, minmax(48px, 1fr));
+    min-width: 320px;
+  }
+  .persona-col, .persona-label {
+    padding: 0.14rem 0.1rem;
+    font-size: 0.75rem;
+    min-width: 38px;
+  }
+}
+
+/* =========================
+   PERSONA BÁSICA (FOTO + DADOS, RESUMO, OBJETIVOS/FRUSTRAÇÕES)
+   ========================= */
+.persona-row.ficha {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+/* AJUSTE PARA FOTO DA PERSONA - SÓ VALE PARA FOTO DA PERSONA! */
+#personas .persona-photo {
+  width: 190px !important;
+  height: 190px !important;
+  object-fit: cover;
+  border-radius: 10px !important;
+  margin: 0 !important;
+  display: block;
+}
+
+.persona-basic {
+  min-width: 260px;
+  max-width: 700px;
+  width: 100%;
+}
+.persona-name {
+  color: #40849e;
+  font-size: 1.7rem;
+  text-align: left;
+  margin: 0 0 12px 0;
+  padding-left: 10px;
+}
+.persona-basic ul {
+  margin: 0 0 12px 10px;
+  padding: 0;
+  list-style: none;
+}
+.persona-basic ul li {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+/* Resumo da persona centralizado */
+.persona-summary {
+  min-width: 260px;
+  max-width: 700px;
+  margin: 0.8rem auto;
+  padding: 0.8rem 1.2rem;
+  border-left: 3px solid #40849e;
+  border-radius: 7px;
+  color: #232323;
+  background: #f7fbfc;
+  font-size: 1rem;
+  text-align: justify;
+  display: block;
+}
+/* Objetivos e frustrações como texto normal */
+.persona-objetivos-frustracoes {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.persona-objetivos-frustracoes > div {
+  flex: 1;
+  max-width: 400px;
+}
+.persona-objetivos-frustracoes strong {
+  color: #40849e;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 6px;
+}
+.persona-objetivos-frustracoes p {
+  margin: 0.3rem 0;
+  color: #444;
+  font-size: 1rem;
+}
+@media (max-width: 800px) {
+  .persona-row.ficha { flex-direction: column; align-items: center; }
+  .persona-objetivos-frustracoes { flex-direction: column; gap: 1rem; }
+}
+
+/* =========================
+   PERGUNTAS DA PESQUISA
+   ========================= */
+.perguntas-lista {
+  list-style: none;
+  padding-left: 0;
+}
+.perguntas-lista li {
+  margin-bottom: 8px;
+}
+.perguntas-lista .numero {
+  font-weight: bold;
+  color: #40849e;
+  margin-right: 4px;
+}
+
+/* =========================
+   IMAGENS SECUNDÁRIAS E OUTROS
+   ========================= */
+#processo img {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+#processo {
+  max-width: 900px;
+  margin: 0 auto 48px auto;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  text-align: justify;
+}
+#mapa {
+  display: block;
+  margin: 1rem auto;
+  width: 50% !important;
+  max-width: 200px !important;
+  height: auto !important;
+}
+#personas img {
+  display: block;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 40px;
+}
+#persona {
+  max-width: 700px;
+  margin: 0 auto 48px auto;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* =========================
+   RESPONSIVIDADE GERAL
+   ========================= */
+@media (max-width: 1200px) {
+  .container { max-width: 98vw; }
+  .hero-avatar { max-width: 30vw; }
+  #processo { max-width: 98vw; }
+}
+@media (max-width: 900px) {
+  .site-hero-top { padding-left: 8px; }
+  .site-logo { height: 29px; margin-left: 20px; margin-right: 16px; }
+  .header-nav { gap: 1.1rem; }
+  .site-hero { min-height: 230px; }
+  .site-hero-bottom { padding-left: 16px; padding-right: 16px;}
+  .cards-row { flex-wrap: wrap; gap: 0.7rem;}
+  .hero-content { gap: 0.05rem; }
+  .hero-title-block h1 { font-size: 2.7rem; }
+  .hero-avatar { max-width: 80vw; }
+  .projects-list-grid { flex-direction: column; gap: 26px; align-items: center;}
+  .project-group,
+  .project-card { width: 98vw; max-width: 98vw; }
+  .project-image { max-width: 98vw; }
+  .project-title, .project-desc { max-width: 98vw; }
+  .project-info, .project-title, .project-desc { max-width: 98vw; }
+  .project-overview-icons { gap: 1.2rem; }
+  .project-overview-icons.grid-2x3 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  #mockup img, #grafico-mockup { max-width: 90vw; }
+  #processo img { max-width: 96vw; }
+  #processo { max-width: 96vw; }
+}
+@media (max-width: 700px) {
+  .container,
+  .sobre-mim-container,
+  .project-details-container {
+    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+    max-width: 99vw;
+    text-align: center;
+  }
+  .cards-row, .projects-list-grid {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  .hero-content { gap: 0.04rem; }
+  .hero-title-block h1 { font-size: 2rem; }
+  .hero-image-block { max-width: 95vw; width: 100%; }
+  #mockup img, #grafico-mockup { max-width: 98vw; }
+  .project-group,
+  .project-card { width: 98vw; max-width: 98vw; }
+  .project-title, .project-desc { max-width: 98vw; }
+  .project-image { max-width: 98vw; }
+  #processo img { max-width: 98vw; }
+  #processo { max-width: 99vw; }
+}
+@media (max-width: 500px) {
+  .container,
+  .sobre-mim-container,
+  .project-details-container {
+    padding: 1.6rem 0.7rem 1.6rem 0.7rem;
+    max-width: 99vw;
+    text-align: center;
+  }
+  .project-title { font-size: 1.24rem; }
+  .project-desc { font-size: 1.15rem; }
+  .hero-title-block h1 { font-size: 1.3rem; }
+  #mockup img, #grafico-mockup { max-width: 99vw; }
+  .project-group,
+  .project-card { width: 99vw; max-width: 99vw; }
+  .project-title, .project-desc { max-width: 99vw; }
+  .project-image { max-width: 99vw; }
+  #processo img { max-width: 99vw; }
+  #processo { max-width: 100vw; }
+}
+@media (max-width: 700px) {
+  .perfil-tecnologias img {
+    width: 22px !important;
+    height: 22px !important;
+  }
+}
+@media (max-width: 500px) {
+  .perfil-tecnologias img {
+    width: 17px !important;
+    height: 17px !important;
+  }
+}
+.container h2, section.container > h2 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-left: 22px;
+}
+.container h2::before, section.container > h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60%;
+  background: #40849e;
+  border-radius: 3px;
+}
+#textos {
+  text-align: justify;
+}
+
+/* =========================
+   AJUSTE EXCLUSIVO "Pesquisa com Usuários"
+   ========================= */
+#pesquisa-usuarios h2 {
+  text-align: justify;
+  display: block;
+  position: relative;
+  padding-left: 22px;
+}
+#pesquisa-usuarios h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60%;
+  background: #40849e;
+  border-radius: 3px;
+}
+#pesquisa-usuarios p,
+#pesquisa-usuarios .project-desc,
+#pesquisa-usuarios li {
+  text-align: justify;
+}
+#pesquisa-usuarios img {
+  display: block;
+  margin-bottom: 1em;
+  max-width: 100%;
+  height: auto;
+}
+
+
+mediaquery.css
+/* ========== PADRÃO DE MARGENS LATERAIS ========== */
+/* Desktop grande */
+@media (min-width: 1201px) {
+  .container,
+  .sobre-mim-container,
+  .project-details-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Até 1200px */
+@media (max-width: 1200px) {
+  .container,
+  .sobre-mim-container,
+  .project-details-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-avatar { max-width: 30vw; }
+}
+
+/* Até 900px */
+@media (max-width: 900px) {
+  .container,
+  .sobre-mim-container,
+  .project-details-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 99vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site-hero-top { padding-left: 8px; }
+  .site-logo { height: 29px; margin-left: 20px; margin-right: 16px; }
+  .header-nav { gap: 1.1rem; }
+  .site-hero { min-height: 230px; }
+  .site-hero-bottom { padding-left: 16px; padding-right: 16px;}
+  .cards-row { flex-wrap: wrap; gap: 0.7rem;}
+  .hero-content { flex-direction: column; gap: 1.5rem; }
+  .hero-title-block h1 { font-size: 2.7rem; }
+  .hero-avatar { max-width: 80vw; }
+  .projects-list-grid { flex-direction: column; gap: 26px; align-items: center;}
+  .project-card { width: 98vw; }
+  .project-image { height: 190px;}
+  .project-info, .project-title, .project-desc { max-width: 98vw; }
+  .project-overview-icons { gap: 1.2rem; }
+}
+
+/* Até 700px */
+@media (max-width: 700px) {
+  .container,
+  .sobre-mim-container,
+  .project-details-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 99vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   #processo #proximos-passos {
+    display: block;
+    width: 100%;
+    max-width: 180px; /* ou outro valor que preferir */
+    height: auto;
+    margin: 0 auto;
+  }
+  #mapa {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .cards-row, .projects-list-grid {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  /* Justificar texto nos blocos principais do persona mobile */
+  .persona-mobile .persona-summary,
+  .persona-mobile .persona-objetivos-frustracoes p,
+  .persona-mobile .persona-basic,
+  .persona-mobile .persona-basic li {
+    text-align: justify !important;
+  }
+  .persona-objetivos-frustracoes p {
+    text-align: justify !important;
+  }
+  .site-hero-top {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+    padding-top: 10px;
+    padding-right: 0;
+  }
+  .site-logo {
+    margin: 10px 0 8px 24px;
+    height: 32px;
+  }
+  .menu-toggle { display: block !important; }
+  .menu-toggle img { width: 32px; height: 32px; display: block; }
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    top: 54px;
+    right: 6px;
+    background: var(--header-bg);
+    border-radius: 8px;
+    padding: 16px 24px 16px 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.11);
+    z-index: 12;
+    min-width: 160px;
+    width: max-content;
+    align-items: flex-end;
+  }
+  .header-nav.active { display: flex; }
+  .header-social { display: none !important; }
+  .header-lang { display: flex !important; position: absolute; top: 14px; right: 64px; left: auto; z-index: 21; background: transparent; white-space: nowrap; overflow: visible; font-size: 1.04rem; padding: 0 4px; }
+  .hero-title-block h1 { font-size: 2rem; }
+  .hero-content { flex-direction: column; gap: 1.6rem; margin-top: 2rem; margin-bottom: 2rem; }
+  .hero-image-block { max-width: 95vw; width: 100%; display: flex; justify-content: center; align-items: center; }
+  .hero-avatar { max-width: 65vw; width: 100%; height: auto; border-radius: 0.6rem; }
+  .card, .project-card {
+    aspect-ratio: 1 / 1;
+    max-width: 90vw;
+    min-width: 70vw;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.2rem 1.1rem;
+    font-size: 1.11rem;
+    margin: 0 auto;
+  }
+  .project-title { font-size: 1.21rem; }
+  .project-desc, .sobre-mim-texto, .card p { font-size: 1.13rem; }
+  .sobre-mim-content { flex-direction: column; align-items: center; gap: 1.7rem; }
+  .sobre-mim-texto { text-align: justify; }
+  .perfil-tecnologias { justify-content: center; }
+  .sobre-mim-foto { width: 70px; height: 120px; }
+  .project-overview-icons {
+    flex-direction: column;
+    gap: 2.2rem;
+    align-items: stretch;
+  }
+  .project-feature {
+    max-width: 100vw;
+    min-width: 0;
+  }
+  .project-overview-icons.grid-2x3 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 1.2rem;
+    width: 100%;
+    margin: 0 auto 1.8rem auto;
+  }
+  .project-feature {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .perfil-tecnologias img {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  /* PERSONA MOBILE AJUSTES */
+  .persona-mobile {
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.02rem;
+    align-items: center;
+  }
+  .persona-photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .persona-photo img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.7rem;
+  }
+  .persona-basic {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+  .persona-basic h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
+    font-weight: 700;
+    color: #40849e;
+  }
+  .persona-basic ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.7rem 0;
+    font-size: 0.99rem;
+  }
+  .persona-basic li {
+    margin-bottom: 0.18em;
+    text-align: left;
+  }
+  .persona-quote {
+    font-style: italic;
+    color: #444;
+    margin: 0.6rem 0 1rem 0;
+    font-size: 1.02rem;
+    text-align: center;
+  }
+  .persona-details {
+    display: flex;
+    gap: 1.2rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.9rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .persona-details > div {
+    flex: 1 1 120px;
+    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .persona-goals {
+    color: #40849e;
+    font-size: 1.07rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .persona-frustrations {
+    color: #e23b2b;
+    font-size: 1.07rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .persona-details ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 1.2em;
+    font-size: 0.98rem;
+    text-align: left;
+  }
+  .persona-details li {
+    margin-bottom: 0.4em;
+    text-align: left;
+  }
+  .persona-summary {
+    border: 1.5px solid #40849e;
+    border-radius: 7px;
+    padding: 0.65rem 0.9rem;
+    color: #263031;
+    font-size: 0.98rem;
+    margin-top: 0.8rem;
+    background: #fafdff;
+    text-align: center;
+  }
+
+  /* ===== AJUSTES DE IMAGEM DE CAPA DO PROJETO ===== */
+  .project-card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project-image {
+    aspect-ratio: 16/10;
+    min-height: 140px;
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px 14px 0 0;
+    margin: 0;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .container,
+  .sobre-mim-container,
+  .project-details-container {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    max-width: 99vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .persona-details {
+    flex-direction: column;
+    gap: 0.6rem;
+    text-align: center;
+  }
+  .persona-details > div {
+    min-width: unset;
+    align-items: center;
+  }
+  .persona-summary {
+    font-size: 0.96rem;
+    padding: 1.2rem 1rem;
+    text-align: center;
+  }
+  .persona-photo img {
+    width: 94px;
+    height: 94px;
+  }
+  .persona-basic {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .container,
+  .sobre-mim-container,
+  .project-details-container {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    max-width: 99vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card, .project-card {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    min-width: 97vw;
+    font-size: 1.11rem;
+    margin: 0 auto;
+  }
+  .project-title { font-size: 1.24rem; }
+  .project-desc { font-size: 1.15rem; }
+  .site-hero-top { padding-left: 2px; }
+  .site-logo { margin-left: 10px;}
+  .site-hero-bottom { padding-left: 7px; padding-right: 7px;}
+  #back-to-top, .theme-float { left: 0.7rem; right: auto; bottom: 0.7rem; }
+  .img-fluid { max-width: 96vw; }
+  .hero-title-block h1 { font-size: 1.3rem; }
+  .project-overview-icons { gap: 1.2rem; }
+  .perfil-tecnologias img {
+    width: 17px !important;
+    height: 17px !important;
+  }
+  #mapa {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ===== AJUSTES DE IMAGEM DE CAPA DO PROJETO (mobile menor) ===== */
+  .project-card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project-image {
+    aspect-ratio: 16/10;
+    min-height: 110px;
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px 14px 0 0;
+    margin: 0;
+    display: block;
+  }
+}
+
+/* Garantir imagens não ultrapassam margens */
+#processo picture,
+#processo img,
+#processo source {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  #processo picture,
+  #processo img {
+    max-width: 100%;
+  }
+}
+.container h1, 
+.container h2, 
+.container h3, 
+.container h4, 
+.container h5, 
+.container h6 {
+  text-align: left !important;
+}
+@media (max-width: 700px) {
+  #back-to-top {
+    right: 1rem;
+    left: auto;
+    bottom: 1rem;
+    z-index: 1001;
+  }
+  .theme-float {
+    left: 1rem;
+    right: auto;
+    bottom: 1rem;
+    z-index: 1002;
+  }
+}
+
+darkmodeprojetos.css
+/* ELEMENTOS DE PROJETOS/PÁGINAS INTERNAS */
+
+/* Títulos e textos dos cards e projetos */
+[data-theme="dark"] .card strong,
+[data-theme="dark"] .project-title {
+  color: #40849e !important;
+}
+[data-theme="dark"] .card p,
+[data-theme="dark"] .project-desc,
+[data-theme="dark"] .etapas-list,
+[data-theme="dark"] .project-overview,
+[data-theme="dark"] .project-details-container,
+[data-theme="dark"] .cards-row,
+[data-theme="dark"] .container,
+[data-theme="dark"] .project-info {
+  color: #fff !important;
+}
+
+/* Fundo dos cards/projetos */
+[data-theme="dark"] .card,
+[data-theme="dark"] .project-card {
+  background: #222 !important;
+}
+
+/* Blocos de recursos dos projetos */
+[data-theme="dark"] .project-feature {
+  background: #2c2c2c !important;
+  color: #fff !important;
+}
+[data-theme="dark"] .project-feature strong,
+[data-theme="dark"] .project-feature-title {
+  color: #40849e !important;
+}
+[data-theme="dark"] .project-feature-icon i,
+[data-theme="dark"] .project-feature-icon svg {
+  color: #40849e !important;
+  filter: none !important;
+}
+[data-theme="dark"] .project-feature-icon img {
+  filter: none !important;
+  opacity: 1 !important;
+}
+[data-theme="dark"] .project-feature,
+[data-theme="dark"] .project-feature * {
+  color: #fff !important;
+}
+[data-theme="dark"] .project-feature strong,
+[data-theme="dark"] .project-feature-title {
+  color: #40849e !important;
+}
+
+/* Tabela de Persona */
+[data-theme="dark"] .persona-container {
+  background: #181d1e !important;
+  color: #fff !important;
+}
+[data-theme="dark"] .persona-head strong,
+[data-theme="dark"] .persona-head .persona-name {
+  color: #40849e !important;
+}
+[data-theme="dark"] .persona-head p,
+[data-theme="dark"] .persona-goal {
+  color: #fff !important;
+}
+[data-theme="dark"] .persona-layout {
+  background: #2C2C2C !important;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+[data-theme="dark"] .persona-row {
+  background: transparent;
+}
+[data-theme="dark"] .persona-header,
+[data-theme="dark"] .persona-row {
+  border-color: #34434d !important;
+}
+[data-theme="dark"] .persona-col {
+  background: transparent;
+  color: #fff !important;
+  border-color: #34434d !important;
+}
+[data-theme="dark"] .persona-label,
+[data-theme="dark"] .persona-header .persona-col {
+  color: #40849e !important;
+  font-weight: bold;
+}
+[data-theme="dark"] .persona-col b,
+[data-theme="dark"] .persona-col strong {
+  color: #40849e !important;
+  font-weight: bold;
+}
+[data-theme="dark"] .persona-col i,
+[data-theme="dark"] .persona-col svg {
+  color: #40849e !important;
+}
+[data-theme="dark"] .persona-label {
+  background: transparent !important;
+}
+
+/* Persona Mobile */
+[data-theme="dark"] .persona-mobile {
+  color: #fff !important;
+  border-radius: 0.7rem;
+  padding: 1.5rem 1.2rem;
+}
+[data-theme="dark"] .persona-mobile .persona-name {
+  color: #40849e !important;
+}
+[data-theme="dark"] .persona-mobile .persona-basic ul,
+[data-theme="dark"] .persona-mobile .persona-basic li {
+  color: #fff !important;
+}
+[data-theme="dark"] .persona-mobile .persona-basic strong {
+  color: #40849e !important;
+  font-weight: bold;
+}
+
+/* Quadro resumo (caixa branca no light) - borda azul à esquerda e sombra, sem fundo no dark */
+[data-theme="dark"] .persona-mobile .persona-summary {
+  background: #2C2C2C;
+  color: #fff !important;
+  border-radius: 10px;
+   border-left: 3px solid #40849e;
+    padding: 1.2rem 1.1rem;
+  margin: 0 auto;
+}
+
+/* Objetivos & Frustrações - títulos azul, textos brancos */
+[data-theme="dark"] .persona-objetivos-frustracoes strong {
+  color: #40849e !important;
+}
+[data-theme="dark"] .persona-objetivos-frustracoes p {
+  color: #fff !important;
+}
+
+darkmode.css
+/* VARIÁVEIS E ELEMENTOS GLOBAIS */
+[data-theme="dark"] {
+  --header-bg: #181f1f;
+  --accent: #fff;
+  --accent2: #40849e;
+  --white: #222;
+  --gray: #e3e3e3;
+  --gray-bg: #1f1f1f;
+  --social: #c7d0da;
+  --social-hover: #40849e;
+}
+
+/* Cabeçalho/nav/ícones globais */
+[data-theme="dark"] .icon-link {
+  background: #1F1F1F !important;
+}
+[data-theme="dark"] .icon-link:hover,
+[data-theme="dark"] .icon-link:focus {
+  background: #40849e !important;
+  color: #fff !important;
+}
+[data-theme="dark"] .nav-link {
+  background: transparent !important;
+}
+
+/* Sobre-mim e perfis globais */
+[data-theme="dark"] .sobre-mim-texto h2 {
+  color: #fff !important;
+}
+[data-theme="dark"] .perfil-titulo,
+[data-theme="dark"] .perfil-subtitulo {
+  color: #40849e !important;
+}
+[data-theme="dark"] .sobre-mim-texto p {
+  color: #fff !important;
+}
+
+/* Menu e ícones globais */
+[data-theme="dark"] .menu-toggle img {
+  filter: brightness(0) invert(1);
+}
+[data-theme="dark"] .adobe-pf-icon {
+  filter: brightness(0) saturate(100%) invert(93%) sepia(1%) saturate(1300%) hue-rotate(163deg) brightness(103%) contrast(84%);
+}
+[data-theme="dark"] .card,
+[data-theme="dark"] .project-card {
+  border: 1.5px solid #fff !important;
+   padding: 0;
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden; /* importante para que a imagem arredondada acompanhe o card */
+  border: 1.5px solid #fff; /* já garantido no darkmode */
+  background: #222; /* ou sua cor de fundo */
+
+}
+
+script.js
+// 1. Inicializa tema ANTES de carregar partials
+const html = document.documentElement;
+const themeStorage = localStorage.getItem('theme');
+if (themeStorage === 'dark') {
+  html.setAttribute('data-theme', 'dark');
+} else {
+  html.setAttribute('data-theme', 'light');
+}
+
+// 2. Carrega partials
+const partials = [
+  { id: 'header', file: 'partials/header.html' },
+  { id: 'sobre', file: 'partials/sobre.html' },
+  { id: 'projects-list', file: 'partials/projetos.html' },
+  { id: 'project-orcamento', file: 'partials/projeto-orcamento.html' },
+  { id: 'project-ecommerce', file: 'partials/projeto-ecommerce.html' },
+  { id: 'footer', file: 'partials/footer.html' }
+];
+
+Promise.all(partials.map(part =>
+  fetch(part.file).then(r => r.text()).then(content => {
+    document.getElementById(part.id).innerHTML = content;
+  })
+)).then(() => {
+
+  // 3. FUNDO DO HERO (tema e responsivo)
+  function isMobile() {
+    return window.innerWidth <= 700;
+  }
+  function atualizarFundoHero() {
+    const bg = document.querySelector('.site-hero-bg');
+    if (!bg) return;
+    if (isMobile()) {
+      if (html.getAttribute('data-theme') === 'dark') {
+        bg.style.backgroundImage = "url('assets/fundo_celular_escuro.png')";
+      } else {
+        bg.style.backgroundImage = "url('assets/fundo_celular_claro.png')";
+      }
+    } else {
+      if (html.getAttribute('data-theme') === 'dark') {
+        bg.style.backgroundImage = "url('assets/fundo_dark.jpg')";
+      } else {
+        bg.style.backgroundImage = "url('assets/fundo.jpg')";
+      }
+    }
+  }
+
+  // 3.1. TROCA O GRÁFICO DO PROCESSO CONFORME TEMA
+  function atualizarGraficoProcesso() {
+    // Pode ter mais de um gráfico em algumas páginas, trate todos!
+    const graficos = document.querySelectorAll('#grafico-processo');
+    graficos.forEach(img => {
+      if (!img) return;
+      var tema = document.documentElement.getAttribute('data-theme');
+      img.src = (tema === "dark")
+        ? "assets/processodoprojeto_dark.png"
+        : "assets/processodoprojeto.png";
+    });
+  }
+  // Chama a função ao carregar partials (garante troca ao entrar na página)
+  atualizarGraficoProcesso();
+  // Observa mudanças no atributo data-theme no <html>
+  const observerGrafico = new MutationObserver(atualizarGraficoProcesso);
+  observerGrafico.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  // 4. TEMA CLARO/ESCURO
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  function atualizarIconeTema() {
+    if (!themeIcon) return;
+    if (html.getAttribute('data-theme') === 'dark') {
+      themeIcon.src = 'assets/dia.png';
+      themeIcon.alt = 'Modo claro';
+    } else {
+      themeIcon.src = 'assets/noite.png';
+      themeIcon.alt = 'Modo escuro';
+    }
+  }
+  atualizarFundoHero();
+  atualizarIconeTema();
+  window.addEventListener('resize', atualizarFundoHero);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      if (current === 'dark') {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      }
+      atualizarFundoHero();
+      atualizarIconeTema();
+      atualizarGraficoProcesso(); // Atualiza o gráfico manualmente ao clicar no botão!
+    });
+  }
+
+  // 5. BOTÃO VOLTAR AO TOPO
+  const backToTopBtn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 350) {
+      backToTopBtn.style.display = 'block';
+      setTimeout(() => backToTopBtn.style.opacity = '1', 100);
+    } else {
+      backToTopBtn.style.opacity = '0';
+      setTimeout(() => backToTopBtn.style.display = 'none', 350);
+    }
+  });
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // 6. MENU MOBILE (hamburguer)
+  const menuToggleBtn = document.getElementById('menu-toggle');
+  const headerNav = document.getElementById('header-nav');
+  const menuOverlay = document.getElementById('menu-overlay');
+  function closeMenu() {
+    headerNav.classList.remove('active');
+    menuOverlay.classList.remove('active');
+  }
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener('click', () => {
+      headerNav.classList.toggle('active');
+      menuOverlay.classList.toggle('active');
+    });
+  }
+  if (menuOverlay) {
+    menuOverlay.addEventListener('click', () => {
+      closeMenu();
+    });
+  }
+  if (headerNav) {
+    headerNav.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (isMobile()) closeMenu();
+      });
+    });
+  }
+
+  // 7. NAVEGAÇÃO SUAVE E BOTÕES ATIVOS
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        document.querySelectorAll('.nav-link').forEach(a => a.classList.remove('active'));
+        this.classList.add('active');
+        const section = document.querySelector(href);
+        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Mostra projetos, esconde detalhes se for início
+        if (href === "#projects-list") {
+          document.getElementById('projects-list').style.display = 'block';
+          document.getElementById('project-orcamento').style.display = 'none';
+          document.getElementById('project-ecommerce').style.display = 'none';
+        }
+      }
+    });
+  });
+  // Atualiza botão ativo conforme scroll
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = Array.from(navLinks).map(link => document.querySelector(link.getAttribute('href')));
+  window.addEventListener('scroll', () => {
+    let scrollPos = window.scrollY || window.pageYOffset;
+    let selected = 0;
+    sections.forEach((section, idx) => {
+      if (section && section.offsetTop - 120 <= scrollPos) {
+        selected = idx;
+      }
+    });
+    navLinks.forEach(a => a.classList.remove('active'));
+    navLinks[selected].classList.add('active');
+  });
+
+  // 8. NAVEGAÇÃO ENTRE PROJETOS
+  function setupProjectNavigation() {
+    const projectsList = document.getElementById('projects-list');
+    const projectOrcamento = document.getElementById('project-orcamento');
+    const projectEcommerce = document.getElementById('project-ecommerce');
+    if (projectsList) projectsList.style.display = 'block';
+    if (projectOrcamento) projectOrcamento.style.display = 'none';
+    if (projectEcommerce) projectEcommerce.style.display = 'none';
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', function () {
+        if (projectsList) projectsList.style.display = 'none';
+        if (projectOrcamento) projectOrcamento.style.display = (card.dataset.project === "orcamento" ? 'block' : 'none');
+        if (projectEcommerce) projectEcommerce.style.display = (card.dataset.project === "ecommerce" ? 'block' : 'none');
+        setTimeout(() => {
+          if (card.dataset.project === "orcamento" && projectOrcamento) projectOrcamento.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (card.dataset.project === "ecommerce" && projectEcommerce) projectEcommerce.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 80);
+        atualizarGraficoProcesso(); // Garante troca do gráfico ao abrir detalhes
+      });
+    });
+
+    // Botão voltar do orçamento
+    const backOrcamento = document.getElementById('back-to-projects-orcamento');
+    if (backOrcamento && projectOrcamento && projectsList) {
+      backOrcamento.addEventListener('click', () => {
+        projectOrcamento.style.display = 'none';
+        projectsList.style.display = 'block';
+        projectsList.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+    // Botão voltar do e-commerce
+    const backEcommerce = document.getElementById('back-to-projects-ecommerce');
+    if (backEcommerce && projectEcommerce && projectsList) {
+      backEcommerce.addEventListener('click', () => {
+        projectEcommerce.style.display = 'none';
+        projectsList.style.display = 'block';
+        projectsList.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+  }
+  setupProjectNavigation();
+
+  // 9. IDIOMA (PT/EN) - só texto marcado com data-i18n
+  const langBtns = document.querySelectorAll('.lang-btn');
+  let lang = 'pt';
+  const i18n = {
+    pt: {
+      home: "Página Inicial",
+      about: "Sobre Mim",
+      contact: "Contato",
+      "about-title": "Sobre Mim",
+      "about-role": "UX/UI Designer e Criadora Visual",
+      "about-text": `Me chamo <b>Daniele Scheibler</b>, sou UX/UI Designer com formação em Ciências Biológicas e background em design gráfico, edição de vídeos e motion design.<br>
+        Natural do Rio Grande do Sul, iniciei minha trajetória acadêmica pela ciência, mas encontrei nas artes visuais minha verdadeira paixão.<br>
+        Hoje atuo como profissional autônoma criando identidades visuais, conteúdos digitais e experiências centradas no usuário.<br>`,
+      "about-tools": "Ferramentas e Tecnologias",
+      "orcamento-title": "Orçamento de Serviços Express",
+      "orcamento-desc": "UX/UI para otimizar orçamentos de vídeo e facilitar a vida do profissional audiovisual.",
+      "ecommerce-title": "E-commerce (Projeto Fictício)",
+      "ecommerce-desc": "Experiência de compra digital, design de interface e jornada do usuário para loja online.",
+      footer: "Desenvolvido por <b>Daniele Scheibler</b> • 2025"
+    },
+    en: {
+      home: "Home",
+      about: "About Me",
+      contact: "Contact",
+      "about-title": "About Me",
+      "about-role": "UX/UI Designer & Visual Creator",
+      "about-text": `My name is <b>Daniele Scheibler</b>, I'm a UX/UI Designer with a background in Biological Sciences, graphic design, video editing and motion design.<br>
+        Born in Rio Grande do Sul, I started my academic path in science, but found my true passion in the visual arts.<br>
+        Today I work as a freelance professional creating visual identities, digital content, and user-centered experiences.<br>`,
+      "about-tools": "Tools & Technologies",
+      "orcamento-title": "Services Budget Express",
+      "orcamento-desc": "UX/UI to optimize video budgets and make life easier for audiovisual professionals.",
+      "ecommerce-title": "E-commerce (Fictional Project)",
+      "ecommerce-desc": "Digital shopping experience, interface design and user journey for an online store.",
+      footer: "Developed by <b>Daniele Scheibler</b> • 2025"
+    }
+  };
+  function traduzirSite(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (i18n[lang][key]) {
+        el.innerHTML = i18n[lang][key];
+      }
+    });
+    document.documentElement.setAttribute("lang", lang);
+  }
+  langBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      langBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      lang = this.dataset.lang;
+      traduzirSite(lang);
+    });
+  });
+  traduzirSite(lang);
+
+});
